@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utility classes */
+@layer components {
+  .nav-link {
+    @apply text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors;
+  }
+  
+  .mobile-nav-link {
+    @apply text-gray-800 dark:text-white py-2 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors;
+  }
+  
+  .social-icon {
+    @apply text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors;
+  }
+}
+
+/* Animation delays */
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom styling for prose */
+.prose h2 {
+  @apply text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4;
+}
+
+.prose p {
+  @apply text-gray-700 dark:text-gray-300 mb-4;
+}
+
+/* For WebKit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-500;
+}
